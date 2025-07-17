@@ -4,9 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>施設情報｜大阪万博2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <style>
+        /* .sisetu-ishiran */
+        /* 基本設定 */
+        /* 施設画像 */
+        .sisetu-ichiran img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* 施設名 */
+        .sisetu-ichiran span {
+            filter: opacity(100%);
+            position: fixed;
+            left: 50%;
+            top: 50%;
+        }
+
+        /* ホバー */
+        /* 施設画像 */
+        .sisetu-ichiran img:hover {
+            filter: blur(5px);
+        }
+
+        /* 施設名 */
+        .sisetu-ichiran span:hover {
+            filter: opacity(100%);
+        }
+    </style>
 </head>
 
 <body>
@@ -56,8 +87,25 @@
         </nav>
 
     </header>
-    <main>
 
+    <!-- コンテンツ -->
+    <main>
+        <!-- 上の一覧表示 -->
+        <div class="sisetu-ichiran">
+            <!-- 大屋根リング -->
+            <div>
+                <!-- 施設写真 -->
+                <img src="https://www.expo2025.or.jp/wp/wp-content/themes/expo2025orjp_2022/assets/img/expo-map-index/main-facilities/thumb_index_04.jpg"
+                    alt="大屋根リング">
+                <!-- 施設名 -->
+                <span>大屋根リング</span>
+            </div>
+        </div>
+
+        <!-- 施設詳細表示 -->
+        <div class="sisetu-shousai">
+
+        </div>
     </main>
 
 
